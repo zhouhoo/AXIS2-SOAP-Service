@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-5-22 20:29:32 by Hibernate Tools 4.3.1.Final -->
+<hibernate-mapping>
+    <class name="com.june.Entity.Users" table="USERS" optimistic-lock="version">
+        <id name="userID" type="int">
+            <column name="USERID" />
+            <generator class="assigned" />
+        </id>
+        <property name="Name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+        <property name="passwd" type="java.lang.String">
+            <column name="PASSWD" />
+        </property>
+    </class>
+</hibernate-mapping>
